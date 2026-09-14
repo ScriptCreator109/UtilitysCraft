@@ -19,8 +19,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       
-      - name: Setup Gradle
+      - name: Setup Gradle 7.5.1
         uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: 7.5.1
       
       - name: Compilar com Gradle
         run: gradle build
